@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="styles.min.css">
+	<script src="scripts.min.js"></script>
+
+	<title>Proportunity | Homework</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<meta name="description" content='Homework for Proportunity' />
+</head>
+<body>
+	<header class='container'>
+	  <h1 class='vertical-space'>
+		Your budget.
+	  </h1>
+	  <h2 class='vertical-space'>
+		First things first. Find out how much you could afford with a Proportunity Loan.
+	  </h2>
+	</header>
+	<div class="row vertical-space horizontal-space-small">
+	  <div class='compareBox bg-cream'>
+		<h2>
+		  Bank only
+		</h2>
+		<h2 class='vertical-space-small'>
+		  <strong>£<span id='bank-value'>295</span>K</strong>
+		</h2>
+		<h2>
+		  Min 10% deposit
+		</h2>
+	  </div>
+	  <div class='spacer'></div>
+	  <div class='circle'>
+		<span class='text-grey'>&lsaquo;</span>
+		<span class='text-green'>&rsaquo;</span>
+	  </div>
+	  <div class='compareBox text-white bg-green'>
+		<h2>
+		  + Proportunity
+		</h2>
+		<h2 class='vertical-space-small'>
+		  <strong>£<span id='proportunity-value'>385</span>K</strong>
+		</h2>
+		<h2>
+		  Min 5% deposit
+		</h2>
+	  </div>
+	</div>
+	<div class='container vertical-space'>
+	  <div class="row">
+		<h2>
+		  Household income
+		</h2>
+		<div class="value button bg-grey">
+		  £<span id='income-value'>20</span>K
+		</div>
+	  </div>
+	  <input type="range" min="0" max="200" value="20" class="slider" id='income' onchange="updateHouseholdIncome(this.value);">
+	  <div class="row">
+		<h2>
+		  Savings
+		</h2>
+		<div class="value button bg-grey">
+		  £<span id='savings-value'>10</span>K
+		</div>
+	  </div>
+	  <input type="range" min="0" max="200" value="10" class="slider" id='savings' onchange="updateSavings(this.value);">
+	</div>
+	<div class='row container vertical-space'>
+	  <h2>
+		Advanced
+	  </h2>
+	  <span class="chevron bottom text-grey"></span>
+	</div>
+	<div class='border-top'>
+	  <button class='button text-white bg-green right'>
+		Set budget
+	  </button>
+	</div>
+  </body>
